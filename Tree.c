@@ -1,39 +1,26 @@
-// This is the main file
-#include "stdio.h"
 
-typedef struct TreeStruct {
-    TreeStruct *left;
-    TreeStruct *right;
-    TreeStruct *par;
-    TreeStruct *current;
-    TreeStruct *next;
+#include "stdio.h"
+// This is the strucutre of the Tree
+
+typedef struct
+{
+    struct treeNode *left;
+    struct treeNode *right;
+    struct treeNode *parent;
+    struct treeNode *root;
+    
 } treeNode;
 
 
-static typedef struct TreeFunctions {
-    void Add(treeNode *root, int val);
-    void Print (treeNode *root);
-
-}funcs;
-
-// Implementation
-void Add(treeNode *root, int val){};
-
-void Print(treeNode *root){};
-
-
+treeNode Max(treeNode x){
+    treeNode t;
+    return t;
+}
 
 int main(){
-    treeNode *root = (treeNode*)malloc(sizeof(treeNode));
-    root->left =0;
-    root->right = 0;
-    root->current = 5;
-    root->par = NULL;
-    root->next = NULL;
+    treeNode t;
+    
+    int x=0;
     
     
-    Add(root, 6);
-    Add(root,4);
-
-
 };
